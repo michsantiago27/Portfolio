@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!--Liga a la hoja de estilos CSS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Liga a las fuentes de google 1 -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> <!--Liga a las fuentes de google 2 -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="menuSuperior">
+            <img class="logoHome" src="assets/pizza-planet.png">
+            <button class="botonCerrarSesion" onclick="cerrarSesion()">Cerrar sesión</button>
+    </div>
+    <div id="vistaHome" class="home">
+        <p>¿Qué quieres hacer?</p>
+        <p>1. Consultar saldo</p>
+        <p>2. Depositar monto</p>
+        <p>3. Retirar monto</p>
+        <div class="inputsHome">
+            <input id="opcionHome" class="inputOpcionHome" placeholder="Opción" type="number">
+            <button onclick="obtenerOpcion()" class="botonOpcionHome">Aceptar</button>
+        </div>
+    </div>
+    <div id="vistaTransaccion" class="transaccion">
+        <input id="monto" placeholder="Ingresa monto">
+        <button id="botonMonto" onclick="ingresarRetirarMonto()">Actualizar</button>
+        <button id="botonCancelarTransaccion" onclick="cancelarTransaccion()">Regresar</button>
+    </div>
+    <div id="mensaje"></div>    
+    <script src="cajero.js"></script> <!--Liga al JS -->
+</body>
+</html>

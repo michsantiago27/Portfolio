@@ -1,0 +1,250 @@
+
+/*Unidades de medida: %, px, vh (view height), vw (view width), etc*/
+
+.seccion_izq {
+    background-color: rgb(166, 194, 255);
+    width: 40%;
+    max-width: 300px;
+    padding-top: 24px;
+    padding-left: 48px;
+    padding-right: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 10pt;
+    margin-left: 10%;
+}
+
+.seccion_der {
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    max-width: 500px;
+    padding-top: 24px;
+    padding-left: 48px;
+    padding-right: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-right: 10%;
+}
+
+div {  /* Se pueden definir estilos para todas las etiquetas como un div */
+    background-color: rgb(211, 234, 255);
+    padding: 10px;
+}
+
+body {
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+}
+
+.container3 {
+    padding: 20px;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    min-height: 900px;
+    min-width: 1200px;
+    width: 100%;
+    /*flex-direction: row-reverse;   Es para cambiar el orden de las columnas*/
+}
+
+h1, h2, h3 { /* Se pueden afectar varias etiquetas de golpe */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #1976D2;
+}
+
+h4 {
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+h3 {
+    margin-top: 60px;
+}
+
+ul li{
+    margin: 10px;
+}
+
+h1 span { /* Estilo que aplican para todo lo que esté dentro de un <h1> y dentro de un <span>*/
+    color: rgb(7, 0, 110);
+}
+
+.contact ul{
+    padding-left: 0px;
+    list-style: none;
+}
+
+.contact ul li {
+    margin-left: 0px;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: 4px solid rgb(7, 0, 110);
+}
+
+.interests ul li{
+    list-style: none;
+    margin-left: 50px;
+}
+
+.interests ul li:first-child{
+    margin-left: 0;
+}
+
+.interests ul{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+}
+
+.skills ul{
+    padding-left: 0px;
+}
+
+.skills ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    min-width: 200px;
+    height: 6px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.circle1 {
+    border-radius: 100%;
+    background-color: #1976D2;
+    position: absolute;
+    padding: 0;
+    margin-left: 180px;
+    width: 16px;
+    height: 16px;
+}
+
+.barfill1 {
+    width: 188px;
+    height: 6px;
+    margin: 0%;
+    padding: 0%;
+    border-radius: 3px;
+    background-color: #1976D2;
+    margin-left: 0%;
+}
+
+.circle2 {
+    border-radius: 100%;
+    background-color: #1976D2;
+    position: absolute;
+    padding: 0;
+    margin-left: 40px;
+    width: 16px;
+    height: 16px;
+}
+
+.barfill2 {
+    width: 48px;
+    height: 6px;
+    margin: 0%;
+    padding: 0%;
+    border-radius: 3px;
+    background-color: #1976D2;
+    margin-left: 0%;
+}
+
+.circle3 {
+    border-radius: 100%;
+    background-color: #1976D2;
+    position: absolute;
+    padding: 0;
+    margin-left: 130px;
+    width: 16px;
+    height: 16px;
+}
+
+.barfill3 {
+    width: 138px;
+    height: 6px;
+    margin: 0%;
+    padding: 0%;
+    border-radius: 3px;
+    background-color: #1976D2;
+    margin-left: 0%;
+}
+
+.circle4 {
+    border-radius: 100%;
+    background-color: #1976D2;
+    position: absolute;
+    padding: 0;
+    margin-left: 120px;
+    width: 16px;
+    height: 16px;
+}
+
+.barfill4 {
+    width: 128px;
+    height: 6px;
+    margin: 0%;
+    padding: 0%;
+    border-radius: 3px;
+    background-color: #1976D2;
+    margin-left: 0%;
+}
+
+.redes ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+.redes ul li a img{
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+/* Responsive 
+Tablet: min-width: 420px
+Desktop: min-width: 720px
+*/
+
+@media screen and (max-width: 420px) { /* Tablet */
+    .container3 {  
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .seccion_izq {
+        background-color: yellow;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .seccion_der {
+        background-color: red;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
