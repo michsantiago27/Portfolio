@@ -14,7 +14,11 @@
  */
 
 const express = require('express')
+var cors = require('cors')  // Es necesario instalar CORS para que las peticiones del cliente las acepte nuestro servidorsito
+
 const app = express()
+app.use(cors())
+
 const port = 3000
 // app.use(express.json)  // Al agregar esto no jala, pero no tengo idea por qué
 
@@ -55,14 +59,21 @@ var autos = [
     descripcion : 'LEGO con llantas',
     precio : 800000,
     imagen : 'https://img.automexico.com/2019/11/23/mQ3iMQdN/teslacybertruck202101-b9d8.jpg'
-  }
-]
+}]
 
 
-  app.get('/', (req, res) => {  // Los navegadores cuando cargan una dirección por default usan GET
-   res.send('Hello World! ejercicio de coches sí :)')
- })
+app.get('/', (req, res) => {
+   res.send({holaMundo : 'Hello World! ejercicio de coches sí :) a hacer el primer sitio'})
+})
 
- app.listen(port, () => {  // Se ejecuta el listen para poner a la API a escuchar peticiones de clientes (como el navegador)
-   console.log(`Example app listening at http://localhost:${port}`)
- })
+app.get('/listado', (req, res) => {
+  res.send(autos)
+})
+
+app.get('/auto', (req, res) => {
+  res.send('Responder con el auto solicitado. Auto solicitado: ' + req.query.idAuto + ' ' + req.query.idAutos)
+})
+
+app.listen(port, () => {  // Se ejecuta el listen para poner a la API a escuchar peticiones de clientes (como el navegador)
+   console.log(`API del ejercicio de autos escuchando en http://localhost:${port}`)
+})

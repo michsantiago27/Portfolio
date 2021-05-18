@@ -50,9 +50,11 @@ app.get('/pokemon/:id', (req, res) => {
     res.send(pokemonArray[req.params.id]) // Regresar a Postman el pokemon según su ID
 })
 
-// Obtener varios pokemones. Entiendo como mandar parámetros en el campo req.query, pero no como enviarlos en req.params sin que sean de un solo caracter
-app.get('/pokemon/variosParams/:id1:id2' , (req, res) => {
-    console.log(req)
+// Obtener varios pokemones. La petición debe ser: http://localhost:3000/auto?id1=2&id2=4&id3=0
+app.get('/pokemon/variosParams/' , (req, res) => {
+    console.log(req.query.id1)
+    console.log(req.query.id2)
+    console.log(req.query.id3)
 })
 
 /***************************** DELETE *****************************/
@@ -67,7 +69,3 @@ app.delete('/pokemon/:id', (req, res) => {
     const pokeBorrado = pokemonArray.splice(req.params.id,1)[0]
     res.send('Se borró el pokemon: ' + pokeBorrado.nombre)
 })
-
-
-
-//Correr en terminal el npm run dev para reiniciar servidorsito cada cambio en el script
