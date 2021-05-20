@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!--Liga a la hoja de estilos CSS-->
     <title>Document</title>
 </head>
 <body>
-    <h1>Título de la página</h1>
-    <div id='contenedorListado'></div>
+    <div class='header'>
+        <h1 class='titulo' onclick='pintarListado()'>SAAVAK</h1>
+        <div class='botonCarrito' onclick="verCarrito()"></div>
+    </div>
+    <div id='contenedorListado' class="contenedorListado"></div>
     <script src = "frontAutos.js"></script>
 </body>
 </html>

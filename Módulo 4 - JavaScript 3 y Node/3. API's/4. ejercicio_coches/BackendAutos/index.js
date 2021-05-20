@@ -26,6 +26,7 @@ const port = 3000
 /** Definición de los autos */
 var autos = [
   {
+    id : 0,
     marca : 'KIA',
     modelo : 'RIO',
     descripcion : 'El batimovil regresa',
@@ -33,6 +34,7 @@ var autos = [
     imagen : 'https://i.blogs.es/8df4c7/2017-kia-rio-pulse-3/840_560.jpg'  
   },
   {
+    id : 1,
     marca : 'VOLKSWAGEN',
     modelo : 'JETTA',
     descripcion : 'Un coche confiable para hacer el super y viajar con la fam',
@@ -40,6 +42,7 @@ var autos = [
     imagen : 'http://www.automotores-rev.com/wp-content/uploads/2020/07/mantiene-vw-jetta-liderazgo-en-ventas-enero%E2%80%93junio-2020-revista%E2%80%93auto%E2%80%93motores.jpg' 
   },
   {
+    id : 2,
     marca : 'MAZDA',
     modelo : '2',
     descripcion : 'Auto pa echar las cold ones con los boys',
@@ -47,6 +50,7 @@ var autos = [
     imagen : 'https://img.motoryracing.com/noticias/portada/23000/23404-n.jpg'
   },
   {
+    id : 3,
     marca : 'MCLAREN',
     modelo : 'ARTURA',
     descripcion : 'Carrazo pa llegar a Acapulco en hora y media',
@@ -54,6 +58,7 @@ var autos = [
     imagen : 'https://soymotor.com/sites/default/files/imagenes/noticia/mclaren-artura-frontal-2-soymotor_0.jpg'
   },
   {
+    id : 4,
     marca : 'TESLA',
     modelo : 'CYBERTRUCK',
     descripcion : 'LEGO con llantas',
@@ -61,6 +66,7 @@ var autos = [
     imagen : 'https://img.automexico.com/2019/11/23/mQ3iMQdN/teslacybertruck202101-b9d8.jpg'
 }]
 
+var carrito = []
 
 app.get('/', (req, res) => {
    res.send({holaMundo : 'Hello World! ejercicio de coches sí :) a hacer el primer sitio'})
@@ -71,7 +77,16 @@ app.get('/listado', (req, res) => {
 })
 
 app.get('/auto', (req, res) => {
-  res.send('Responder con el auto solicitado. Auto solicitado: ' + req.query.idAuto + ' ' + req.query.idAutos)
+  res.send(autos[req.query.idAuto])
+})
+
+app.get('/carrito', (req, res) => {
+  res.send(carrito)
+})
+
+app.post('/reservar', (req, res) => {
+  carrito.push(autos[req.query.idAuto])
+  res.send({respuesta: 'Todo chido'})
 })
 
 app.listen(port, () => {  // Se ejecuta el listen para poner a la API a escuchar peticiones de clientes (como el navegador)

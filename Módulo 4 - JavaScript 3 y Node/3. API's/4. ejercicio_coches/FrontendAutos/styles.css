@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}
+
+.titulo:hover {
+    cursor: pointer;
+}
+
+.botonCarrito {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    background-image: url('https://image.flaticon.com/icons/png/512/107/107831.png');
+    background-size: contain;
+}
+
+.botonCarrito:hover {
+    cursor: pointer;
+}
+
+.contenedorListado {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.elementoListado {
+    margin: 10px;
+    height: 400px;
+    width: 260px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagenListado {
+    max-height: 300px;
+    max-width: 260px;
+}
+
+.detalleAuto {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(174, 174, 174);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cerrarModal {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.detalleAutoImagen {
+    max-height: 100px;
+    max-width: auto;
+    position: absolute;
+
+}
+
+.error {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    height: 100px;
+    width: 250px;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
