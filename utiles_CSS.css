@@ -1,0 +1,114 @@
+/* Fuentes de google: 
+Etiquetas CSS: https://www.eniun.com/resumen-tabla-propiedades-css-valores/
+Colores: https://www.materialui.co/colors
+Fuentes: https://fonts.google.com/
+FlexBox: Reacomodo de elementos dentro de un contendor
+FlexBox Ranita: https://flexboxfroggy.com/#es
+Juegos HTML y CSS: codepip.com/games
+Imágenes random: https://picsum.photos/
+Pseudo clases: https://www.w3schools.com/css/css_pseudo_classes.asp
+Animations: https://www.w3schools.com/css/css3_animations.asp
+CSS Frameworks:
+- Bootstrap
+- MDB Bootstrap
+- Bulma
+- Material UI
+
+1. HTML (En el <head> / No olvidar ligar la hoja de estilos!!)
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Liga a las fuentes de google 1 -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> <!--Liga a las fuentes de google 2 -->
+
+2. CSS (Hasta ahora solo uso estas etiquetas, pero agregar nuevas si se vuelven más frecuentes) */
+
+
+
+/********************** Inicio de proyecto. Eliminar margins, paddings, tamaños predefinidos, etc. **********************/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    max-height: 100%;
+    max-width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+}
+
+input {
+    font-family: 'Quicksand', sans-serif;
+}
+
+button {
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/*************************** Animaciones ********************************/
+
+.clase {
+    animation-name: animacion-clase;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animacion-clase {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    6% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    18% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    25% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+}
+
+/*************************** Responsivo ********************************/
+@media screen and (max-width: 1300px) { /* Intro en laptop-tablet */
+}
+
+@media screen and (max-width: 768px) { /* Smartphone responsive */
+}

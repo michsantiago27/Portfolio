@@ -1,0 +1,26 @@
+1. ----- VSCode -----
+    Extensiones instaladas
+    1. HTML Snippets
+    2. Live Server
+    3. Prettier - Code formatter
+    4. GitHub Pull Requests and Issues
+
+2. ----- HTTP -----
+    API Hello World!
+    - Para ver todo el proceso entrar a:
+    - https://expressjs.com/es/starter/installing.html
+    - https://expressjs.com/es/starter/hello-world.html
+
+    PokéApi: https://pokeapi.co/
+
+    Usando Fetch: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+    https://github.com/node-fetch/node-fetch
+
+    JSONView: Extensión de Chrome para ver JSONs
+
+    Postman para probar todos los métodos de comunicación con APIs
+
+3. ----- NodeJS -----
+    npm
+    - Repositorio
+    - Línea de comandos

@@ -13,6 +13,8 @@
  *  }
  */
 
+
+
 const express = require('express')
 var cors = require('cors')  // Es necesario instalar CORS para que las peticiones del cliente las acepte nuestro servidorsito
 
@@ -24,6 +26,7 @@ const port = 3000
 
  
 /** Definición de los autos */
+// Para usar jalar el json de otro archivo usar: const autos = require("./autos.json")
 var autos = [
   {
     id : 0,
@@ -31,7 +34,7 @@ var autos = [
     modelo : 'RIO',
     descripcion : 'El batimovil regresa',
     precio : 300000,
-    imagen : 'https://i.blogs.es/8df4c7/2017-kia-rio-pulse-3/840_560.jpg'  
+    imagen : 'https://www.grupomax.mx/wp-content/uploads/2020/05/kia-rio-hb-20-aurora-black-pearl.png'  
   },
   {
     id : 1,

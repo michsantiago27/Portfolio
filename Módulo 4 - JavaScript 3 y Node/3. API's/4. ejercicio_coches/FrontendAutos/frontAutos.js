@@ -18,7 +18,7 @@ function mostrarAuto(elementId) {
     fetch(peticionEndpoint)
     .then(res => res.json())
     .then(data => {                // Data es el objeto ya utilizable para Javascript
-        // Mostrar un modal
+        // Mostrar un "modal"
         var divListado = document.getElementById('contenedorListado')
         var x = document.createElement('DIV')
         var att = document.createAttribute('class')
@@ -73,7 +73,7 @@ function mostrarAuto(elementId) {
         x.appendChild(divImagen)
         // Precio
         var divPrecio = document.createElement('DIV')
-        divPrecio.appendChild(document.createTextNode(data.precio))
+        divPrecio.appendChild(document.createTextNode(data.precio.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })))
         att = document.createAttribute('class')
         att.value = 'detalleAutoPrecio'
         divPrecio.setAttributeNode(att)
@@ -150,7 +150,7 @@ function pintarLista(listado) {
         let divElemento = document.createElement('div')
         let divMarca = document.createElement('div')
         let divModelo = document.createElement('div')
-        let imgImagen = document.createElement('div')
+        let imgImagen = document.createElement('img')
 
         // 2. Crear contenido para los elementos
         let conMarca = document.createTextNode(listado[i].marca)

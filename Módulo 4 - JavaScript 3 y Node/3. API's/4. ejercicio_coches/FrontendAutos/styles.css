@@ -1,24 +1,74 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
-    padding-top: 80px;
+    height: 100vh;
+    width: 100vw;
+    max-height: 100%;
+    max-width: 100%;
+    background: #d4d4d4 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+}
+
+body {
+    position: absolute;
+    top: 140px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
 }
 
 div {
     margin: 0;
     padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
 }
 
+input {
+    font-family: 'Quicksand', sans-serif;
+}
+
+button {
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/********************* HEADER *************************/
 .header {
     position: fixed;
     top: 0;
-    height: 80px;
+    height: 120px;
     width: 100vw;
     display: flex;
     align-items: center;
+    background-color: white;
+    z-index: 1;
 }
 
 .titulo {
+    position: absolute;
+    left: 50px;
     display: flex;
     justify-content: center;
     justify-self: center;
@@ -30,10 +80,10 @@ div {
 
 .botonCarrito {
     position: absolute;
+    right: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 20px;
     height: 50px;
     width: 50px;
     background-image: url('https://image.flaticon.com/icons/png/512/107/107831.png');
@@ -44,16 +94,19 @@ div {
     cursor: pointer;
 }
 
+/********************* CONTENIDO *************************/
 .contenedorListado {
     width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .elementoListado {
     margin: 10px;
-    height: 400px;
+    height: 240px;
     width: 260px;
     background-color: rgb(51, 51, 51);
     border-radius: 15px;
@@ -63,20 +116,105 @@ div {
     align-items: center;
 }
 
-.imagenListado {
-    max-height: 300px;
-    max-width: 260px;
+.elementoListado:hover {
+    background-color: rgb(39, 39, 39);
 }
 
+.marcaListado {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.modeloListado {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.imagenListado {
+    position: relative;
+    top: 15px;
+    width: 90%;
+    height: auto;
+    max-height: 150px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/********************* DETALLE AUTO *************************/
 .detalleAuto {
     height: 500px;
-    width: 500px;
-    background-color: rgb(174, 174, 174);
+    width: 70%;
+    min-width: 300px;
+    max-width: 700px;
+    background-color: rgb(39, 39, 39);
     position: fixed;
+    top: 80px;
+    z-index: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.detalleAutoMarca {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font-size: 40px;
+}
+
+.detalleAutoModelo {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    font-size: 40px;
+}
+
+.detalleAutoImagen {
+    max-height: 200px;
+    max-width: 400px;
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    align-self: center;
+    font-size: 40px;
+    border-radius: 15px;
+}
+
+.detalleAutoDescripcion {
+    position: absolute;
+    right: 50px;
+    top: 170px;
+    font-size: 20px;
+    text-align: right;
+    max-width: 200px;
+}
+
+.detalleAutoPrecio {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    font-size: 40px;
+}
+
+.botonReservar {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: lightgray;
+    height: 40px;
+    width: 130px;
+}
+
+.botonReservar:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+.botonReservar:active {
+    background-color: rgb(126, 126, 126);
 }
 
 .cerrarModal {
@@ -85,15 +223,14 @@ div {
     position: absolute;
     top: 5px;
     right: 5px;
+    font-weight: 1000;
 }
 
-.detalleAutoImagen {
-    max-height: 100px;
-    max-width: auto;
-    position: absolute;
-
+.cerrarModal:hover {
+    cursor: pointer;
 }
 
+/********************* EXTRAS *************************/
 .error {
     position: fixed;
     top: 5px;
