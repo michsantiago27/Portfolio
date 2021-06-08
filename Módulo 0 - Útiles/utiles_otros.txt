@@ -24,7 +24,3 @@
     npm
     - Repositorio
     - Línea de comandos
-
-4. ----- React -----
-    http://reactjs.org
-    En la carpeta del proyecto, ejecutar: npx create-react-app my-app

@@ -71,6 +71,7 @@ width: 100vw;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-left: 22px;
 }
 .s1Icono {
   height: 32px;
@@ -110,11 +111,84 @@ width: 100vw;
 }
 .s1CB {
   position: absolute;
-  height: 450px;
-  width: 500px;
-  border-radius: 15px;
+  padding: 32px;
+  height: 400px;
+  width: 445px;
+  border-radius: 12px;
   background-color: #FFFFFF;
   top: 80px;
   left: 40px;
   display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 5% 5% 5% 5% 5% 5%;
+}
+.tituloBuscador {
+  font-size: 37px;
+  font-weight: 1000;
+  grid-column: 1 / 3;
+}
+.descripcionBuscador {
+  color: grey;
+  font-size: 16px;
+  font-weight: 400;
+  grid-row-start: 4;
+  margin-top: 18px;
+  grid-column: 1 / 3;
+}
+.formBuscador {
+  height: 300px;
+  margin-top: 20px;
+  grid-column: 1/3;
+  grid-row-start: 6;
+  display: grid;
+  gap: 7px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
+}
+.ubicacionBuscador {
+  grid-column: 1 / 3;
+  grid-row: 1/4;
+  z-index: 1;
+  
+}
+.inputUbicacionBuscador {
+  position: relative;
+  z-index: 0;
+  left: 0px;
+  height: 92%;
+  width: 100%;
+}
+.llegadaBuscador {
+  grid-column: 1 / 2;
+  grid-row: 4/7;
+}
+.salidaBuscador {
+  grid-column: 2 / 3;
+  grid-row: 4/7;
+}
+.adultosBuscador {
+  grid-column: 1 / 2;
+  grid-row: 7/10;
+}
+.niñosBuscador {
+  grid-column: 2 / 3;
+  grid-row: 7/10;
+}
+.botonBuscador {
+  height: 50px;
+  grid-column: 1 / 3;
+  grid-row-start: 10;
+  background-color: #E31C60;
+  color: white;
+  font-weight: 600;
+}
+.formBuscador input {
+  border-radius: 6px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 15px;
+  outline-width: 2px;
+  padding-left: 15px;
 }

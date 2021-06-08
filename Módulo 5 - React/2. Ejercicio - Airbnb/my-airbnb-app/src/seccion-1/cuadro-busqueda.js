@@ -1,10 +1,12 @@
 function FormBuscador (props) {
     return (
-        <form>
-            <input 
-                defaultValue='Cerca de aquí'
-                className='ubicacionBuscador'
-                type='text'/>
+        <form className='formBuscador'>
+            <div className='ubicacionBuscador'>Ubicación
+                <input 
+                    defaultValue='Cerca de aquí'
+                    className='inputUbicacionBuscador'
+                    type='text'/>
+            </div>
             <input 
                 placeholder='Agrega la fecha'
                 className='llegadaBuscador'
