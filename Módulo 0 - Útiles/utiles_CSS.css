@@ -1,4 +1,4 @@
-/* Fuentes de google: 
+/*
 Etiquetas CSS: https://www.eniun.com/resumen-tabla-propiedades-css-valores/
 Colores: https://www.materialui.co/colors
 Fuentes: https://fonts.google.com/
@@ -8,17 +8,28 @@ Juegos HTML y CSS: codepip.com/games
 Imágenes random: https://picsum.photos/
 Pseudo clases: https://www.w3schools.com/css/css_pseudo_classes.asp
 Animations: https://www.w3schools.com/css/css3_animations.asp
+
+Trucos chidos de cada cosa de CSS: https://css-tricks.com/almanac/
+
 CSS Frameworks:
 - Bootstrap
 - MDB Bootstrap
 - Bulma
 - Material UI
 
-1. HTML (En el <head> / No olvidar ligar la hoja de estilos!! ))
+Definición y uso de variables reutilizables en el CSS: 
+:root {    // Se usaría ':root' para definirla como global usable en todo el HTML. Pero también podría ser local
+  --main-bg-color: brown;
+}
+element {
+  background-color: var(--main-bg-color);
+}
+
+Fuentes de google: HTML (En el <head> / No olvidar ligar la hoja de estilos!! ))
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Liga a las fuentes de google 1 -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> <!--Liga a las fuentes de google 2 -->
 
-2. CSS (Hasta ahora solo uso estas etiquetas, pero agregar nuevas si se vuelven más frecuentes) */
+CSS (Hasta ahora solo uso estas etiquetas, pero agregar nuevas si se vuelven más frecuentes) */
 
 
 
