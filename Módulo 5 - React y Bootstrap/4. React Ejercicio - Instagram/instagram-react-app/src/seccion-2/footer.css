@@ -1,0 +1,25 @@
+.footer {
+    position: relative;
+    bottom: 0px;
+    height: 130px;
+    width: 100vw;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footerGrales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+.elementoFooter {
+    height: 10px;
+    width: auto;
+    font-size: smaller;
+    color: grey;
+    text-decoration: none;
+    margin: 10px 10px;
+}

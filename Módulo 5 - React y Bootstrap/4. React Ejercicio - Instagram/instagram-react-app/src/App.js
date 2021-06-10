@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import Top from './seccion-1/Top.js';
+import Footer from './seccion-2/Footer.js';
 
 function App() {
   return (
-    <Top/>
+    <div className='megaDiv'>
+      <Top/>
+      <Footer/>
+    </div>
   );
 }
 
