@@ -12,5 +12,8 @@
  * Class components should always call the base constructor with props.
  * 
  * Meter los CSS de cada componente en su propia carpeta
+ * 
+ * 
 */
 
+// C:\Users\michs\Documents\Web Development\DEVF\Módulo 5 - React y Bootstrap

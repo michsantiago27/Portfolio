@@ -1,0 +1,18 @@
+.contenido {
+    background: #212121;
+    color: white;
+    min-height: 86vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 6px;
+}
+.tarjeta {
+    background: rgb(24, 24, 24);
+    height: 400px;
+    width: 300px;
+    border: none;
+}
+.tarjeta:hover {
+    outline: 3px solid #F4511E;
+}

@@ -23,7 +23,7 @@
 */
 
 
-// 1) Hay que instalar el paquete con 'npm install node-fetch'
+// 1) Hay que instalar el paquete con 'npm install node-fetch' (para cada proyecto)
 const fetch = require("node-fetch");  // 2) Hay que importar fetch
 
 /********************* ( 1 ) *********************/
