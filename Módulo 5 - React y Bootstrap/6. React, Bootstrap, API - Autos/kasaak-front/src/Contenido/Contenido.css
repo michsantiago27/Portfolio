@@ -9,10 +9,26 @@
 }
 .tarjeta {
     background: rgb(24, 24, 24);
-    height: 400px;
-    width: 300px;
+    height: 270px;
+    width: 200px;
     border: none;
+    text-transform: capitalize;
+}
+.tarjeta img {
+    height: 120px;
+    width: 120px;
+    display: block;
+    margin: auto;
 }
 .tarjeta:hover {
     outline: 3px solid #F4511E;
+}
+.tarjetaTitulo {
+    display: flex;
+    justify-content: space-between;
+}
+.tarjetaBotones {
+    display: flex;
+    justify-content: space-between;
+
 }
