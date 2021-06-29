@@ -1,0 +1,34 @@
+.contenido {
+    background: #212121;
+    color: white;
+    min-height: 86vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 6px;
+}
+.tarjeta {
+    background: rgb(24, 24, 24);
+    height: 270px;
+    width: 200px;
+    border: none;
+    text-transform: capitalize;
+}
+.tarjeta img {
+    height: 120px;
+    width: 120px;
+    display: block;
+    margin: auto;
+}
+.tarjeta:hover {
+    outline: 3px solid #F4511E;
+}
+.tarjetaTitulo {
+    display: flex;
+    justify-content: space-between;
+}
+.tarjetaBotones {
+    display: flex;
+    justify-content: space-between;
+
+}

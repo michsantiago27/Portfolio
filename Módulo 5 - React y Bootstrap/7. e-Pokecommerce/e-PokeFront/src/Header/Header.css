@@ -1,0 +1,42 @@
+
+.header {
+    background: #F4511E;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 100%;
+    width: 200px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo:hover {
+    cursor: pointer;
+}
+.logoimg {
+background: white url('https://p.kindpng.com/picc/s/107-1075239_pokeball-pixel-png-png-download-pokeball-pixel-art.png') no-repeat center;
+    background-size: 60px 60px;
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+}
+.menu {
+    position: absolute;
+    right: 30px;
+    display: flex;
+}
+.menu div {
+    color: white;
+    margin: 0 10px 0 10px;
+    min-height: 30px;
+    padding: 10px;
+    border-radius: 6px;
+}
+.menu div:hover {
+    cursor: pointer;
+    background: #E64A19;
+}
