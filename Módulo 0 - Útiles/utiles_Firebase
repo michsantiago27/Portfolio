@@ -1,0 +1,6 @@
+https://react-firebase-js.com/docs/react-firebase-auth/getting-started
+
+
+1. npm i firebase
+2. npm i @react-firebase/auth
+3. Entrar a la consola de firebase, crear un proyecto (agregar app) y obtener el var firebaseConfig = {}
