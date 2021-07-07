@@ -13,7 +13,22 @@
  * 
  * Meter los CSS de cada componente en su propia carpeta
  * 
+ * Los Handlers hay que bindearlos desde el constructor
  * 
+ * CONTEXT (Ver el proyecto de e-pokecommerce) Usarlo para temas y no para autenticar usuarios
+ * - Declararlo
+ * - Heredarlo con el Provider
+ * - Heredarlo con el Consumer (no entiendo la diferencia entre estos dos todavía) (Ni siquiera entiendo pa qué se necesitan. Jaló sin ese pedo)
+ * - Usarlo en un componente clase
+ * - Usarlo en un componente función
+ * - Editar contexto desde una clase
+ * - Editar contexto desde una función
+ * 
+ * 
+ * Routers: Poder cargar páginas diferentes en react
+ * Documentación: https://reactrouter.com/web/guides/quick-start
+ * npm install react-router-dom
+ *
 */
 
 // C:\Users\michs\Documents\Web Development\DEVF\Módulo 5 - React y Bootstrap

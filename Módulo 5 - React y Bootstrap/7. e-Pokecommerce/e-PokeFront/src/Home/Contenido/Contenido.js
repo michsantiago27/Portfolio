@@ -48,7 +48,7 @@ class PokeTarjeta extends React.Component {
                 <div className='col g-2'>
                     <div className='card tarjeta'>
                         <div className='cargandoTarjeta'>
-                            <img src='./pokeball-loading'></img>
+                            <img src='./pokeball-loading' alt=''></img>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ class Contenido extends React.Component {
         } else if(!this.state.isLoaded) {
             return (
                 <div className='container-fluid contenido'>
-                    <img src='./pokeball-loading'></img>
+                    <img src='./pokeball-loading' alt=''></img>
                 </div>
             );
         } else {

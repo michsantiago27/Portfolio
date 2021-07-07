@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { MyContext } from '../../myContext';
 import './Header.css';
 
 function Menu() {
@@ -6,7 +7,7 @@ function Menu() {
         <div className='menu'>
             <div>Opción 1</div>
             <div>Opción 2</div>
-            <div>Opción 3</div>
+            <div>{useContext(MyContext).user}</div>
         </div>
     );
 }
@@ -15,16 +16,16 @@ function Logo() {
     return (
         <div className='logo'>
             <div className='logoimg'></div>
-            <div>KASAK</div>
+            <div>PokeSan</div>
         </div>
     );
 }
 
-function Header() {
+function Header(props) {
     return (
         <div className="container-fluid header" >
             <Logo/>
-            <Menu/>
+            <Menu user={props.user}/>
         </div>
     );
 }

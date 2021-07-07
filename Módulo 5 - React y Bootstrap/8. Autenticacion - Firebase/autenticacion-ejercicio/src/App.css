@@ -36,13 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.loadingScreen {
-  min-height: 90vh;
-  background: #212121 url('https://thumbs.gfycat.com/GenerousTimelyBrontosaurus-max-1mb.gif') no-repeat center;
-  background-size: 80px;
-}
-
-html {
-  background: #212121;
-}

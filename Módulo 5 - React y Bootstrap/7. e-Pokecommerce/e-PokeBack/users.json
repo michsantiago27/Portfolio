@@ -1,0 +1,26 @@
+{
+    "count" : 3,
+    "users": [
+        {
+            "username": "michsantiago27",
+            "password": "1",
+            "user_type": "admin",
+            "name": "Santiago Antón",
+            "session": true
+        },
+        {
+            "username": "cafecu95",
+            "password": "2",
+            "user_type": "member",
+            "name": "Camila Fernández",
+            "session": true
+        },
+        {
+            "username": "mikeBoo",
+            "password": "3",
+            "user_type": "member",
+            "name": "Mike Wasowski",
+            "session": false
+        }
+    ]
+}
