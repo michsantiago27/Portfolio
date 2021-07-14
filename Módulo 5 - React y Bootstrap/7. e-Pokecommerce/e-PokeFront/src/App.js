@@ -60,7 +60,7 @@ class Main extends React.Component {
     } else {
       return ( // Para que todos los hijos de Home y Login vean el contexto, hay que envolverlos en el Provider
         <MyContext.Provider value={this.state.contextValues}>  {/**Hay que enviar (y cachar desde el consumer) los parámetros igual que están definidos en el context */}
-          {this.state.contextValues.isLoggedIn ? <Home/> : <Login/>}
+          {this.state.contextValues.isLoggedIn ? <Home/> : <Home/>}
         </MyContext.Provider>  
       )
     }

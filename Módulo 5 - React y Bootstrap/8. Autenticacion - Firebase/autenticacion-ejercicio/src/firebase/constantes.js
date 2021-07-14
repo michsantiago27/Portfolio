@@ -1,3 +1,4 @@
+// Obtener el var de Firebase
 export const firebaseConfig = {
     apiKey: "AIzaSyDW923rHeKhzD9Pogb2cNrZMrhoftUEkiE",
     authDomain: "autenticacion-ejercicio.firebaseapp.com",

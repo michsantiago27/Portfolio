@@ -1,6 +1,9 @@
 import React from 'react';
 import './Login.css'
 
+import firebase from "firebase/app";
+import "firebase/auth";
+
 class Login extends React.Component {
     constructor(props) {
         super(props);
@@ -45,6 +48,19 @@ class Login extends React.Component {
                         </div>
                         <div className='col-sm-5'>
                             <button className='btn btn-primary' >Iniciar sesión</button> {/**onClick={() => startSession('valor manual')} */}
+                        </div>
+                    </div>
+                    <div className='mb-3 row'>
+                        <div className='col-sm'>
+                            <button className='btn btn-secondary' 
+                            onClick={() => {
+                                const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+                                firebase.auth().signInWithPopup(googleAuthProvider);
+                            }}
+                            >Login Google</button>
+                        </div>
+                        <div className='col-sm'>
+                            <button className='btn btn-secondary'>Login Github</button>
                         </div>
                     </div>
                 </form>

@@ -86,7 +86,7 @@ class Contenido extends React.Component {
         };
     }
     componentDidMount() {
-        fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
+        fetch('https://pokeapi.co/api/v2/pokemon?limit=1000')
         .then(x=>x.json())
         .then(x=>{
             var pokeObjs = [];

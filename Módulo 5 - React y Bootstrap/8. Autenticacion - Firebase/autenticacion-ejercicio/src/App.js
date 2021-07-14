@@ -13,21 +13,21 @@ import {
 import {firebaseConfig} from './firebase/constantes'
 
 function App() {
+
   return (
-    <div className="App">
-      <FirebaseAuthProvider  {...firebaseConfig} firebase={firebase}>  {/* (2) */}
-        {/* <FirebaseAuthConsumer>
-            {({ isSignedIn, user, providerId }) => {
-              return (
-                <pre style={{ height: 300, overflow: "auto" }}>
-                  {JSON.stringify({ isSignedIn, user, providerId }, null, 2)}
-                </pre>
-              );
-            }}
-          </FirebaseAuthConsumer> */}
+    // (2)
+    <FirebaseAuthProvider {...firebaseConfig} firebase={firebase}>
+        <FirebaseAuthConsumer>
+          {({ isSignedIn, user, providerId }) => {
+            return (
+              <pre>
+                {JSON.stringify({ isSignedIn, user, providerId }, null, 2)}
+              </pre>
+            );
+          }}
           <Login/>
-       </FirebaseAuthProvider>
-    </div>
+        </FirebaseAuthConsumer>
+    </FirebaseAuthProvider>
   );
 }
 
