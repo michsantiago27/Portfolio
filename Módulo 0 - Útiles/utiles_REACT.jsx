@@ -24,6 +24,8 @@
  * - Editar contexto desde una clase
  * - Editar contexto desde una función
  * 
+ * HOOKS (https://reactjs.org/docs/hooks-overview.html)
+ * 
  * 
  * Routers: Poder cargar páginas diferentes en react
  * Documentación: https://reactrouter.com/web/guides/quick-start
