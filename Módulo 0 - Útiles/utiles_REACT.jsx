@@ -29,7 +29,7 @@
  * 
  * Routers: Poder cargar páginas diferentes en react
  * Documentación: https://reactrouter.com/web/guides/quick-start
- * npm install react-router-dom
+ * 1. npm install react-router-dom (Creo que es por proyecto, no parece ser global)
  *
 */
 
