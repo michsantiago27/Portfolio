@@ -1,0 +1,9 @@
+Leer o ver videos tutoriales de cómo deployar en netlify porque me salté estas clases por vacaciones y ando turboperdido
+
+1. Cuando se sube un server, el server (la API en este caso) debe ser exportada con:
+  const serverless = require("serverless-http");
+  module.exports = app;
+  module exports.handler = serverless(app);
+
+
+

@@ -18,6 +18,7 @@
  * Obtener varias variables
  *  Petición postman: http://localhost:3001/session?user=mikeBoo
  *  Endpoint: app.get('/session/', (req, res)...    Uso de variables en endpoint: req.query.id1
+ * 
 */
 
 const express = require('express')

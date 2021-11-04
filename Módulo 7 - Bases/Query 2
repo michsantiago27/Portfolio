@@ -1,0 +1,3 @@
+SELECT Q.id_cliente, nombre FROM "Cliente" Q
+LEFT JOIN "Ventas" ON Q.id_cliente = "Ventas".id_cliente
+WHERE "Ventas".id_cliente IS null;

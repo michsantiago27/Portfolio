@@ -1,0 +1,21 @@
+Command line
+- npx create-react-app recap
+- npm install firebase
+- npm install firebase-admin --save
+- npm install --save react-firebase-hooks
+- npm install express --save
+- npm install --save-dev nodemon  (En el package.json debe aparecer "devDependencies": {"nodemon":"version"} )
+- npm install cors
+- npm install knex --save
+- npm install pg --save
+
+Configuraciones manuales
+- En el archivo 'package.json' agregar un elemento en "scripts" que se llame "dev" : "nodemon [nombre del archivo con los endpoints]]"
+- Config Firebase - Credenciales de firebase: Consola de Firebase > Configuración del proyecto > Cuentas de servicio > Generar nueva clave privada
+- Config firebase: Agregar .replace(/\\n/g, "\n") al final de la private_key
+- Token de autorización se puede obtener chrome al hacer clic en el botón en front de "Login con firebase". Network > accounts: SignInWithId....
+
+Imports
+
+
+

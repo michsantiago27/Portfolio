@@ -1,0 +1,5 @@
+SELECT nombre, cantidad, descripcion FROM "Cliente"
+INNER JOIN "Ventas" ON "Cliente".id_cliente = "Ventas".id_cliente
+INNER JOIN "Pedido" ON "Pedido".id_venta = "Ventas".id_venta
+INNER JOIN "Productos" ON "Productos".id_productos = "Pedido".id_producto
+WHERE cantidad = 67;
